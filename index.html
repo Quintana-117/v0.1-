@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gastos y Pagos Pendientes</h1>
+        <form id="expense-form">
+            <label for="salary">Tu Salario:</label>
+            <input type="number" id="salary" name="salary" required>
+
+            <label for="expenses">Gastos Mensuales:</label>
+            <textarea id="expenses" name="expenses" rows="5" placeholder="Ingresa tus gastos, separados por comas (e.g., 100, 200, 150)" required></textarea>
+
+            <label for="pending-payments">Pagos Pendientes:</label>
+            <textarea id="pending-payments" name="pending-payments" rows="5" placeholder="Ingresa tus pagos pendientes, separados por comas (e.g., 50, 30, 100)" required></textarea>
+
+            <button type="button" onclick="calculateSummary()">Calcular</button>
+        </form>
+        
+        <div id="summary" class="summary">
+            <h2>Resumen:</h2>
+            <p id="salary-summary"></p>
+            <p id="expenses-summary"></p>
+            <p id="payments-summary"></p>
+            <p id="total-summary"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
